@@ -43,20 +43,18 @@ To compile and use the `stat_util` library, follow these instructions based on y
 
 - If you only need the `stat_util` library:
   ```
-  clang -std=c89 -Wall -pedantic-errors -D_CRT_SECURE_NO_WARNINGS -o stat_util.lib stat_util.c
+  clang -std=c89 -Wall -pedantic-errors -o stat_util.lib stat_util.c
   ```
 
 - To compile and run the provided test cases (included in `main.c`):
   ```
-  clang -std=c89 -Wall -pedantic-errors -D_CRT_SECURE_NO_WARNINGS -o stat_util_test.exe stat_util.c main.c
+  clang -std=c89 -Wall -pedantic-errors -o stat_util_test.exe stat_util.c main.c
   ```
   
   - Run the executable:
     ```
     ./stat_util_test.exe
     ```
-
-**Important**: The `-D_CRT_SECURE_NO_WARNINGS` flag suppresses warnings related to secure function usage in MSVC environments. These warnings can be safely ignored for this library.
 
 ### For Unix-like Systems (Linux/macOS)
 
